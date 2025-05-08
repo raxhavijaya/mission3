@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/images/favicon/Logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login">
+    <div class="login-container">
+        <div class="login-form">
+            <img class="login-logo" src="images/logo/logo.png" alt="logo">
+            <h1>Masuk</h1>
+            <h2>Selamat datang kembali!</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <div class="input-box-username" >
+                    
+                    <input type="text" id="loginUsername" placeholder="Masukkan username" name="username" required>    
+                </div>
+                <label for="password">Kata Sandi</label>
+               <div class="input-box-password">
+                
+                <input type="password" id="loginPassword" placeholder="Masukkan kata sandi" name="password" required>
+                <span id="togglePassword" class="password-toggle">
+                    <i class="fa-solid fa-eye"></i>
+                  </span>
+               </div>
+               <div class="links">
+                <p><a href="register.html">Belum punya akun? <b>Daftar</b></a></p>
+               <p>Lupa kata sandi?</p>
+               </div>
+               
+                <button class="login-button" type="submit">Masuk</button>
+                <p>Atau</p>
+                <button type="button" class="login-google-button"><img src="images/icon/googleicon.png" alt="Google Logo"> Masuk dengan Google</button>
+            </form>
+        </div>
+       
+    </div>
+    <script src="/scripts/login.js" ></script>
+</body>
+</html>

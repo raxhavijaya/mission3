@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="icon" href="images/favicon/Logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            
+               <a href="home.html">
+                <img src="images/logo/logo.png" alt="Logo" class="logo-desktop">
+                <img src="images/logo/logo2.png" alt="Logo" class="logo-mobile">
+            </a>
+               
+            
+            <nav class="nav-menu">
+                <a href="#">Series</a>
+                <a href="#">Film</a>
+                <a href="#">Daftar Saya</a>
+            </nav>
+        </div>
+
+        <div class="nav-right">
+            <div class="dropdown">
+                <button class="profile-btn" onclick="toggleDropdown()">
+                    <img src="images/avatar/avatar.png" alt="Profile" class="avatar">
+                    <i class="fa-solid fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="dropdownMenu">
+                    <a href="#"><i class="fa-solid fa-user"></i> Profile Saya</a>
+                    <a href="#"><i class="fa-solid fa-star"></i> Ubah ke Premium</a>
+                    <a href="login.html"><i class="fa-solid fa-sign-out-alt"></i> Keluar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <img src="images/cover/cover1.png" alt="Banner Film" class="banner-desktop">
+        <img src="images/cover/cover2.png" alt="Banner Film" class="banner-mobile">
+    </div>
+
+    <div>
+  
+
+<h2 class="carousel-title">Melanjutkan Tonton Film</h2>
+<div class="carousel-wrapper watch-carousel">
+    <button class="carousel-btn left" onclick="scrollCarousel('carousel1', -1)">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel-container" id="carousel1"></div>
+
+    <button class="carousel-btn right" onclick="scrollCarousel('carousel1', 1)">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</div>
+
+<h2 class="carousel-title">Top Rating Film Hari Ini</h2>
+<div class="carousel-wrapper top-rating-carousel">
+    <button class="carousel-btn left" onclick="scrollCarousel('carousel2', -1)">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel-container" id="carousel2"></div>
+
+    <button class="carousel-btn right" onclick="scrollCarousel('carousel2', 1)">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</div>
+
+<h2 class="carousel-title">Film Trending Hari Ini</h2>
+<div class="carousel-wrapper trending-carousel">
+    <button class="carousel-btn left" onclick="scrollCarousel('carousel3', -1)">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel-container" id="carousel3"></div>
+
+    <button class="carousel-btn right" onclick="scrollCarousel('carousel3', 1)">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</div>
+
+<h2 class="carousel-title">Film Rilis Baru</h2>
+<div class="carousel-wrapper release-carousel">
+    <button class="carousel-btn left" onclick="scrollCarousel('carousel4', -1)">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="carousel-container" id="carousel4"></div>
+
+    <button class="carousel-btn right" onclick="scrollCarousel('carousel4', 1)">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</div>
+
+    </div>
+
+    <footer class="footer">
+        <span></span>
+        <div class="logo-footer">
+            <img src="images/logo/logo.png" alt="logo-footer">
+            <p>@2023 Chill All Rights Reserved</p>
+        </div>
+
+        <div class="footer-menu">
+<a href="">Genre</a>
+<a href="">Bantuan  </a>
+        </div>
+    </footer>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>

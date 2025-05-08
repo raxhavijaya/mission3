@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" href="/images/favicon/Logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="register">
+    <div class="register-container">
+        <div class="register-form">
+            <img class="register-logo" src="images/logo/logo.png" alt="logo">
+            <h1>Daftar</h1>
+            <h2>Selamat datang!</h2>
+            <form id="registerForm">
+                <label for="username">Username</label>
+                <div class="input-box-username" >
+                   
+                    <input type="text" id="username" placeholder="Masukkan username" name="username" required>    
+                </div>
+                <label for="password">Kata Sandi</label>
+               <div class="input-box-password-register">
+                            <input type="password" id="password" placeholder="Masukkan kata sandi" name="password" required>
+                            <span id="togglePassword" class="password-toggle">
+                                <i class="fa-solid fa-eye"></i>
+                              </span>
+               </div>
+               <label for="password">Konfirmasi Kata Sandi</label>
+               <div class="input-box-konfirmasi">
+    
+                <input type="password" id="confirmPassword" placeholder="Masukkan kata sandi" name="confirmPassword" required>
+                <span id="toggleConfirmPassword" class="password-toggle">
+                    <i class="fa-solid fa-eye"></i>
+                  </span>
+               </div>
+               <div class="links-register">
+                <p><a href="login.html">Sudah punya akun? <b>Masuk</b></a></p>
+               </div>
+               
+                <button class="register-button" type="submit">Daftar</button>
+                <p>Atau</p>
+                <button type="button" class="register-google-button"><img src="images/icon/googleicon.png" alt="Google Logo"> Daftar dengan Google</button>
+            </form>
+        </div>
+       
+    </div>
+    <script src="/scripts/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,491 @@
+/* Import Google Font - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+body.login {
+    background-image: url('../images/bg/bglogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body.register{
+    background-image: url('../images/bg/bgregister.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login form container */
+.login-container {
+    background-color:#181A1CD6;
+    padding: 40px;
+    border-radius: 16px;
+    width: 500px;
+    height: 550px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+  }
+
+  .register-container {
+    background-color:#181A1CD6;
+    padding: 40px;
+    border-radius: 16px;
+    width: 500px;
+    height: 640px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+  }
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+  }
+
+  .register-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+  }
+  
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .register-logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .login-logo span {
+    font-size: 24px;
+    color: #ffffff; 
+    font-weight: 700; 
+  }
+
+  .register-logo span {
+    font-size: 24px;
+    color: #ffffff; 
+    font-weight: 700; 
+  }
+
+  .login-logo span:nth-child(2) {
+    font-size: 16px;
+    color: #ffffff;  
+    font-weight: 400;
+}
+
+.register-logo span:nth-child(2) {
+    font-size: 16px;
+    color: #ffffff;  
+    font-weight: 400;
+}
+
+  .login-logo {
+    width: fit-content;
+    height: 44px;
+  }
+
+  .register-logo {
+    width: fit-content;
+    height: 44px;
+  }
+  
+  .login-container h1 {
+    font-size: 32px;
+    color: #ffffff; 
+    font-weight: 700; 
+    margin-top: 20px;
+  }
+
+  .register-container h1 {
+    font-size: 32px;
+    color: #ffffff; 
+    font-weight: 700; 
+    margin-top: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;  
+    margin-bottom: 20px;
+  }
+
+  .register-container h2 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;  
+    margin-bottom: 20px;
+  }
+
+input{
+    color: #ffffff;
+    width: 100%;
+}
+
+.input-box-username{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .input-box-password{
+    display: flex;
+    width: 100%;
+    position: relative;
+   
+  }
+
+  .input-box-password-register {
+      display: flex;
+      width: 100%;
+      position: relative;
+margin-bottom: 20px;
+  }
+  
+  
+  
+  /* Style untuk ikon mata */
+  .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Pastikan ikon sejajar secara vertikal */
+    cursor: pointer;
+    font-size: 18px;
+    color: #9D9EA1; /* Warna ikon mata */
+  }
+  
+
+  .input-box-konfirmasi{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+
+
+  label{
+    font-size: 18px;
+    color: #ffffff; 
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  /* Input styling */
+  .login-container input {
+    background-color:#181A1CD6;
+    border-radius: 24px;
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+
+  .register-container input {
+    background-color:#181A1CD6;
+    border-radius: 24px;
+    padding: 12px;
+    border: 1px solid #ccc;
+  }
+
+  /* Button styling */
+  
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .register-container button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  p{
+    color: #9D9EA1;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .login-container button:hover {
+    background-color: #2980b9;
+  }
+
+  .register-container button:hover {
+    background-color: #2980b9;
+  }
+
+  .links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+   .links-register {
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       text-align: center;
+       align-items: center;
+       margin-bottom: 20px;
+   }
+
+  .links p{
+    font-size: 16px;
+    color: #ffffff; 
+    font-weight: 400;
+  }
+  
+  .links a{
+    font-size: 16px;
+    color: #C1C2C4; 
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .links-register a {
+      font-size: 16px;
+      color: #C1C2C4;
+      font-weight: 400;
+      text-decoration: none;
+  }
+
+  .links b{
+    font-size: 16px;
+    color: #ffffff; 
+    font-weight: 400;
+  }
+
+  .links-register b {
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 400;
+  }
+
+  .login-button{
+    background-color: #3D4142;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .register-button{
+    background-color: #3D4142;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.login-google-button{
+    background-color: transparent;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 16px;
+    border: 1px solid #E7E3FC3B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.register-google-button{
+    background-color: transparent;
+    border-radius: 24px;
+    color: #ffffff;
+    font-size: 16px;
+    border: 1px solid #E7E3FC3B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+  .login-google-button img{
+        margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .register-google-button img{
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
+  @media (max-width: 768px) {
+
+      .login-container,
+      .register-container {
+          width: 80%;
+          /* Container width on smaller screens */
+          height: auto;
+          padding: 20px;
+      }
+
+      /* Logo */
+      .login-logo,
+      .register-logo {
+          width: 35%;
+          height: 30%;
+          text-align: center;
+          margin-top: 20px;
+      }
+
+
+      .links a {
+        font-size: 10px;
+      }
+
+      .links b{
+        font-size: 10px;
+      }
+
+     .links-register{
+        margin-bottom: 10px;
+     }
+
+           .links-register a {
+               font-size: 10px;
+           }
+    
+           .links-register b {
+               font-size: 10px;
+           }
+
+      .links p{
+        font-size: 10px;
+      }
+
+      label{
+        font-size: 14px;
+      }
+
+      /* Form fields */
+      .input-box-username{
+          margin-bottom: 15px;
+      }
+
+      .input-box-password-register{
+            margin-bottom: 15px;
+      }
+
+      .input-box-password {
+          margin-bottom: 5px;
+      }
+
+           .input-box-konfirmasi {
+               margin-bottom: 5px;
+           }
+
+      /* Font adjustments */
+      .login-container h1,
+      .register-container h1 {
+          font-size: 24px;
+      }
+
+      .login-container h2,
+      .register-container h2 {
+          font-size: 14px;
+      }
+
+      .login-container button,
+      .register-container button {
+          font-size: 14px;
+      }
+  }
+
+  /* For mobile devices (width 480px or less) */
+  @media (max-width: 480px) {
+
+      .login-container,
+      .register-container {
+          width: 90%;
+          /* Container width on mobile */
+          padding: 10px;
+      }
+
+      .login-container h1,
+      .register-container h1 {
+          font-size: 20px;
+          /* Smaller header */
+      }
+
+      .login-container h2,
+      .register-container h2 {
+          font-size: 12px;
+          /* Smaller subheader */
+      }
+
+      .login-container button,
+      .register-container button {
+          padding: 10px;
+          font-size: 12px;
+      }
+
+      /* Input fields */
+      .input-box-password input,
+      .input-box-konfirmasi input,
+      .input-box-username input {
+          padding: 10px;
+          font-size: 14px;
+      }
+  }

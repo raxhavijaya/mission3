@@ -1,0 +1,417 @@
+/* Import Google Font - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #181A1C;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181a1c;
+    color: white;
+    padding: 25px 80px 25px 80px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    /* Jarak antara logo dan menu */
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #3254FF;
+}
+
+.nav-left img {
+    transition: transform 0.3s ease;
+    /* Membuat animasi halus */
+}
+
+.nav-left img:hover {
+    transform: scale(1.1);
+    /* Memperbesar logo sebesar 10% */
+}
+
+.nav-right .profile-btn .avatar {
+    transition: transform 0.3s ease;
+    /* Efek zoom pada avatar */
+}
+
+.nav-right .profile-btn:hover .avatar {
+    transform: scale(1.1);
+    /* Membesarkan avatar sebesar 10% */
+}
+
+/* Profile Dropdown */
+.nav-right {
+    position: relative;
+}
+
+.profile-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Default: tampilkan logo desktop, sembunyikan logo mobile */
+.logo-desktop {
+    display: block;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+/* Saat layar kecil (mobile), sembunyikan logo desktop, tampilkan logo mobile */
+@media (max-width: 768px) {
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 20px;
+        height: 18px;
+        /* atau sesuaikan dengan ukuran yang kamu inginkan */
+    }
+}
+
+/* Default: tampilkan logo desktop, sembunyikan logo mobile */
+.banner-desktop {
+    display: block;
+}
+
+.banner-mobile {
+    display: none;
+}
+
+/* Saat layar kecil (mobile), sembunyikan logo desktop, tampilkan logo mobile */
+@media (max-width: 768px) {
+    .banner-desktop {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: block;
+        height: 30px;
+        /* atau sesuaikan dengan ukuran yang kamu inginkan */
+    }
+}
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #2a2a2e;
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    margin-top: 8px;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    color: #3254FF;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+ img{
+        width: 50px;
+        height: auto;
+    }
+        
+    
+
+    .navbar {
+        padding: 15px 20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-menu{
+        flex-direction: row;
+    }
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+
+    .nav-left{
+            align-items: flex-start;
+            width: 100%;
+            align-items: center;
+            gap: 12px
+            ;
+    }
+    .nav-right {
+       display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        align-items: center;
+        
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 10px;
+    }
+    .profile-btn {
+        justify-content: flex-start;
+    }
+
+    .dropdown-content {
+        right: 0;
+        left: 0;
+        margin-top: 12px;
+    }
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100%px;
+    /* Sesuaikan dengan tinggi yang diinginkan */
+    overflow: hidden;
+    /* Gambar tidak keluar dari kontainer */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Agar gambar mengisi area dengan proporsional dan tidak terdistorsi */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .banner {
+        height: 250px;
+        /* Sesuaikan untuk layar lebih kecil */
+    }
+
+  
+}
+
+/* Optional: Banner Transition (auto-change images every 5 seconds) */
+@keyframes bannerSlide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-100%);
+    }
+
+    66% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.banner-container {
+    animation: bannerSlide 15s infinite;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .banner {
+        height: 250px;
+    }
+
+    .banner-item::after {
+        height: 20%;
+    }
+    
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-left: 55px;
+    text-align: left;
+}
+
+.carousel-title {
+    color: white;
+    font-size: 24px;
+    margin-top: 50px;
+    padding-left: 55px;
+    text-align: left;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-img {
+    width: 302px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-rating-carousel .carousel-img,
+.trending-carousel .carousel-img,
+.release-carousel .carousel-img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+}
+@media screen and (max-width: 768px) {
+   .carousel-title{
+        font-size: 18px;
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+
+    .carousel-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .carousel-btn {
+        padding: 8px;
+        font-size: 16px;
+    }
+
+        .top-rating-carousel .carousel-img,
+        .trending-carousel .carousel-img,
+        .release-carousel .carousel-img {
+            width: 100px;
+            height: auto;
+            border-radius: 8px;
+        }
+   }
+    
+footer{
+    margin: 140px 20px 140px 20px;
+    padding: 20px;
+    display: flex;
+}
+
+span{
+    background-color: aliceblue;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.logo-footer p{
+    font-size: 16px;
+    color: white;
+    margin-top: 10px;
+}
+/* .carousel-btn.left {
+    position: absolute;
+    left: 0;
+}
+
+.carousel-btn.right {
+    position: absolute;
+    right: 0;
+} */
